@@ -1,0 +1,77 @@
+body {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+}
+.column {
+    /* white-space: nowrap; */
+    display: inline-block;
+    height:100%;
+    width: 20%;
+    position: relative;
+    vertical-align: top;
+    margin: 4px;
+}
+
+.box {
+    display: block;
+    white-space: normal;
+    border: 2px solid blue;
+    margin: 3px;
+    width: 100%;
+    position:relative;
+}
+
+#boxTwo, #boxSix {
+    height: 75%;
+}
+#boxOne, #boxSeven {
+    height: 25% ;
+}
+#boxFour, #boxFive {
+    height: 50%;
+}
+#boxThree{
+    height: 100%;
+}
+
+.paragrafText {
+    margin: 0px;
+ }
+.box.bottom .paragrafText{
+    position: absolute;
+    bottom:0;
+    right:50%;
+    transform: translate(50%,0%);
+}
+/* 
+.box.top .paragrafText{
+    position: absolute;
+    top:0%;
+    right:50%;
+    transform: translate(50%,0%);
+}
+
+.column.left .paragrafText{
+    position: absolute;
+    top:50%;
+    left:0%;
+    transform: translate(0%,-50%);
+}
+
+.column.right .paragrafText{
+    position: absolute;
+    top:50%;
+    right:0%;
+    transform: translate(0%,-50%);
+} */
+
+
+@media (max-height:400px){
+    .box{
+       height: 100% !important;
+       width: 90%;
+       display:inline-block;
+    }
+   }
+
